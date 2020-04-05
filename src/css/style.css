@@ -22,19 +22,33 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 580px;
-    width: 95%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 567px) {
+  .container {
+    max-width: 540px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 276px;
+    width: 92%;
   }
 }
 
 .button {
   background-color: #ffd200;
-  padding: 18px 30px;
+  padding: 18px 29px;
   border: none;
   border-radius: 10px;
   font-weight: bold;
 }
 
-/** импорт стирей navbar 1 **/
+/** импорт стирей navbar **/
 .navbar {
   padding: 8px 0;
 }
@@ -69,10 +83,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.navbar__button {
-  margin-left: 30px;
+  font-size: 13px;
 }
 
 .navbar__phone {
@@ -81,7 +92,14 @@ img {
   font-weight: bold;
   color: #333333;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 6px;
+}
+
+.navbar__button {
+  margin-top: -3px;
+  margin-left: 30px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -94,6 +112,125 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+@media (max-width: 567px) {
+  .navbar__button {
+    margin-top: -5px;
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 14px 25px;
+  }
+}
+
+/** стили для главного экрана **/
+.hero {
+  padding: 50px 0;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  padding-right: 83px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.34;
+  margin-bottom: 40px;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 66px;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-list__image {
+  width: 36px;
+  height: 36px;
+  border: solid 2px #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.hero-list__text {
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+    max-width: 90%;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 567px) {
+  .hero-list__text {
+    max-width: 79%;
   }
 }
 /*# sourceMappingURL=style.css.map */

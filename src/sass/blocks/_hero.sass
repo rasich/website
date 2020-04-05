@@ -1,0 +1,68 @@
+.hero
+  padding: 50px 0
+  &-block
+    display: flex
+    // align-items: center
+  &-text
+    flex-basis: 47%
+    padding-right: 83px
+    &__title
+      font-size: 41px;
+      font-weight: bold;
+      line-height: 1.34;
+      margin-bottom: 40px
+    &__subtitle
+      display: inline-block
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 66px
+  &-list
+    margin: 0
+    padding: 0
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+    &__image
+      width: 36px
+      height: 36px
+      border: solid 2px $main-color
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      margin-right: 25px
+    &__text
+      max-width: 300px
+
+@media (max-width: 1200px) 
+  .hero
+    &-block
+      flex-direction: column
+    &-list
+      margin-bottom: 44px
+    &-text
+      padding-right: 10px
+@media (max-width: 768px) 
+  .hero
+    &-text
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      &__item
+        margin-bottom: 20px
+      &__text
+        font-size: 12px
+        max-width: 90%
+      &__image
+        margin-right: 15px
+@media (max-width: 567px) 
+  .hero
+    &-list
+      &__text
+        max-width: 79%

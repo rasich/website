@@ -11,16 +11,20 @@
   &__address
     display: flex
     flex-direction: column
-  &__button
-    margin-left: 30px
+    font-size: 13px
   &__phone
     display: inline-block
     font-size: 20px;
     font-weight: bold;
     color: $text-color
     text-decoration: none
-    margin-top: 10px
-@media (max-width: 768px) 
+    margin-top: 6px
+  &__button
+    margin-top: -3px
+    margin-left: 30px
+    font-size: 13px
+    font-weight: bold
+@media (max-width: 768px)
   .navbar
     &__contacts
       display: none
@@ -29,3 +33,10 @@
       padding: 15px 26px
     &__logo
       width: 90px
+@media (max-width: 567px) 
+  .navbar
+    &__button
+      margin-top: -5px
+      border-radius: 4px
+      font-size: 10px
+      padding: 14px 25px
