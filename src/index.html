@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Заголовко</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Заголовко</title>
 
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-    <!-- or -->
-    <!--<link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+  <!-- or -->
+  <!--<link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
 
-    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body>
+</head>
+<body>
 
 <!-- 
 prefix  	size width	Max container width
@@ -36,7 +36,7 @@ prefix  	size width	Max container width
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
         </div>
-          <button class="button navbar__button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button">Перезвоните мне</button>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ prefix  	size width	Max container width
           <div class="hero-text">
             <h1 class="hero-text__title">Внутренняя отделка помещений "под ключ"</h1>
             <span class="hero-text__subtitle">с гарантией качества, прописанной в договоре</span>
-           
+
             <ul class="hero-list">
               <li class="hero-list__item">
                 <div class="hero-list__image"><img src="img/hero/clock.png" alt="clock"></div>
@@ -102,8 +102,16 @@ prefix  	size width	Max container width
         </div>
       </div>
     </section>
-    
   </main>
 
-  </body>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button id="close" class="modal-dialog__close">&times;</button>
+      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
 </html>
