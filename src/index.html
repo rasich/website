@@ -10,6 +10,7 @@
   <!--<link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/slick.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -29,10 +30,10 @@ prefix  	size width	Max container width
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
-        <div class="navbar__logo">
+        <div class="navbar__logo wow fadeInLeft" data-wow-delay="0s">
           <img class="logo" src="img/header/logo.jpg" alt="РемонТ Квартир">
         </div>
-        <div class="navbar__info">
+        <div class="navbar__info wow fadeInRight" data-wow-delay="0.1s">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
@@ -67,7 +68,7 @@ prefix  	size width	Max container width
               </li>
             </ul>
           </div>
-          <div class="hero-image">
+          <div class="hero-image wow fadeInRight" data-wow-delay="0.3s">
             <img src="img/hero/hero-image.png" alt="План квартиры">
           </div>
         </div>
@@ -134,42 +135,42 @@ prefix  	size width	Max container width
         <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
         <div class="cards">
 
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0s">
             <div class="card__images"><img class="card__image" src="img/price/bathroom.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
           </div>
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
             <div class="card__images"><img class="card__image"src="img/price/living.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт комнат и квартир</h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
           </div>
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
             <div class="card__images"><img class="card__image"src="img/price/office.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Отделка офисных помещений</h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
           </div>
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
             <div class="card__images"><img class="card__image"src="img/price/buldings.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт в новостройках</h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
           </div>
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
             <div class="card__images"><img class="card__image"src="img/price/kitchen.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт кухонь</h4>
               <a href="#" class="card__link">Узнать цены</a>
             </div>
           </div>
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
             <div class="card__images"><img class="card__image"src="img/price/houses.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт дач и коттеджей</h4>
@@ -197,7 +198,12 @@ prefix  	size width	Max container width
   crossorigin="anonymous"></script>
   <script src="js/modal.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
+    /* Инициализация WOW.js */
+    new WOW().init();
+
+    /* Скрипт слайдера */
     $(document).ready(function () {
       $('.slider').slick({
         infinite: true,
