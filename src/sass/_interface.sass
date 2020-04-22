@@ -44,7 +44,9 @@ img
   padding: 90px 0
   &-title
     font-size: 30px
+    max-width: 600px
     +bold
+    text-align: center
   &-subtitle
     display: block
     font-size: 20px
@@ -55,3 +57,19 @@ img
   font-size: 15px
   border-radius: 10px
   color: #999999
+
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+
+@media (max-width: 576px) 
+  .section
+    &-title
+      font-size: 18px
+    &-subtitle
+      font-size: 14px
+
+@media (max-width: 320px) 
+  .section
+    padding: 38px 0 60px 0
