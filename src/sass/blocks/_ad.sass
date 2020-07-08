@@ -1,0 +1,89 @@
+.info 
+  &__block
+    background-color: #ffc000
+    height: 280px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 100px
+  &__title
+    padding: 0
+    margin: 0
+    text-align: center
+    +bold
+    font-size: 32px
+    line-height: 1.56
+    padding-left: 20px
+    padding-right: 20px
+  &__card
+    width: 370px
+    height: 410px
+    background-color: #f7f7f7
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &s
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 14px
+  &__subtitle
+    margin-top: 27px
+    margin-left: 25px
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.44
+    &_bold
+      +bold
+
+@media (max-width: 1440px)
+  .info
+    &__block
+      margin-bottom: 80px
+    &__card
+      width: 300px
+      height: 350px
+    &__subtitle
+      margin-left: 20px
+      font-size: 14px
+
+@media (max-width: 1200px) 
+  .info 
+    &__title
+      font-size: 26px
+    &__block
+      margin-bottom: 80px
+    &__card
+      width: 230px
+      height: 307px
+    &__subtitle
+      margin-left: 20px
+      margin-right: 10px
+      font-size: 14px
+      & br
+        display: none
+
+@media (max-width: 850px) 
+  .info
+    &__title
+      font-size: 23px
+
+@media (max-width: 780px) 
+  .info
+    &__block
+      margin-bottom: 59px
+    &__card
+      width: 270px
+      margin-bottom: 30px
+      &s
+        flex-direction: column
+
+@media (max-width: 650px) 
+  .info
+    &__title
+      font-size: 20px
+
+@media (max-width: 414px) 
+  .info
+    &__title
+      font-size: 18px

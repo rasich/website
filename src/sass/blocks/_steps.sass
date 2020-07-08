@@ -1,0 +1,67 @@
+.steps
+  &__title
+    +bold
+    margin: auto
+    margin-top: 0
+    margin-bottom: 59px
+  &__subtitle
+    text-align: center
+    margin-bottom: 58px
+  &__block
+    display: flex
+    align-items: top
+    justify-content: space-between
+  &__arrow
+    height: 25px
+    width: 72px
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: top
+    align-items: center
+  &__wrap
+    height: 100px
+    width: 100px
+    border: 2px solid $main-color
+    border-radius: 50%
+    margin-bottom: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+  &__img
+    width: 30px
+  &__span
+    display: block
+    max-width: 174px
+    text-align: center
+
+@media (max-width: 1200px) 
+  .steps
+    &__wrap
+      width: 75px
+      height: 75px
+    &__arrow
+      height: 20px
+      width: 50px
+
+@media (max-width: 768px) 
+  .steps
+    &__arrow
+      display: none
+
+@media (max-width: 650px) 
+  .steps
+    padding-top: 20px
+    &__block
+      flex-direction: column
+    &__title
+      margin-bottom: 27px
+    &__subtitle
+      margin-bottom: 34px
+    &__wrap
+      height: 100px
+      width: 100px
+      margin-bottom: 22px
+    &__item
+      margin-bottom: 30px
